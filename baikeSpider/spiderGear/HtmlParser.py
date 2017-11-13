@@ -21,7 +21,7 @@ class HtmlParser(object):
         get and download uncrawled URLs collection
         """
         new_urls = set()
-        links = soup.find_all('a', href = re.compile(r'/item/.*/\d+'))
+        links = soup.find_all('a', href = re.compile(r'/item/.*'))
         for link in links:
             # get element
             new_url = link['href']
