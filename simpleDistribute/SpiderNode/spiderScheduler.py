@@ -16,7 +16,7 @@ class SpiderWork(object):
         BaseManager.register('get_task_queue')
         BaseManager.register('get_result_queue')
         # 2. connect to server
-        server_addr = '127.0.0.1'
+        server_addr = '192.168.65.176'
         print "connect to server %s..." % server_addr
         # 3. match port & authkey with control node
         self.m = BaseManager(address=(server_addr, 8001), authkey='baike')
